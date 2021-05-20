@@ -1,3 +1,3 @@
 # grip_internship
 
-please add you usename and password in data base connection
+please add your usename and password in data base connection
