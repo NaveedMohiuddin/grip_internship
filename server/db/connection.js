@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-mongoose.connect("mongodb+srv://Naveed:naveedcluster@cluster0.rdinp.mongodb.net/basicbanking?retryWrites=true&w=majority",{useFindAndModify:false,
+mongoose.connect("mongodb+srv://<Username>:<password>@cluster0.rdinp.mongodb.net/basicbanking?retryWrites=true&w=majority",{useFindAndModify:false,
 useCreateIndex:true,
 useNewUrlParser:true,
 useUnifiedTopology:true})
