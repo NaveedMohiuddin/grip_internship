@@ -14,6 +14,7 @@ const View = (props) => {
         axios.get(`https://banking-world.herokuapp.com/customers/${props.id}`).then((response)=>{
             setView(response.data[0]);
         })
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     },[])
     return(
         <>
