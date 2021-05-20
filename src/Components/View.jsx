@@ -11,7 +11,7 @@ const View = (props) => {
     const [view,setView] =useState({});
     console.log(props.id);
     useEffect(()=>{
-        axios.get(`http://localhost:8000/customers/${props.id}`).then((response)=>{
+        axios.get(`https://banking-world.herokuapp.com/customers/${props.id}`).then((response)=>{
             setView(response.data[0]);
         })
     },[])
