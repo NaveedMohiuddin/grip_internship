@@ -14,7 +14,7 @@ const Home = () => {
 
     const showCustomer = () => {
         if (cstate === false) {
-            axios.get('http://localhost:8000/customers').then((response) => {
+            axios.get('https://banking-world.herokuapp.com/customers').then((response) => {
                 const customerData = response.data;
                 console.log(customerData);
                 setData(customerData);
@@ -29,7 +29,7 @@ const Home = () => {
 
     const showTransfer = () => {
         if (tstate === false) {
-            axios.get('http://localhost:8000/transfer').then((response) => {
+            axios.get('https://banking-world.herokuapp.com/transfer').then((response) => {
                 const customerData = response.data;
                 setTransfer(customerData);
             }).catch((err) => { console.log(err); });
