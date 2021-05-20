@@ -1,0 +1,211 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.header {
+    text-align: center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    color: rgb(39, 6, 6);
+    background-color: rgb(89, 200, 204);
+    letter-spacing: 3px;
+    word-spacing: 3px;
+    margin-top: 2px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    opacity: 0.92;
+    background-color: #405662;
+    justify-content: center;
+    font-size: 24px;
+    top: 0px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{ 
+    list-style: none;
+    padding:4px 22px;
+    padding-top: 12px;
+}
+
+#navbar ul li a{
+    color: white;
+    display: block;
+    border-radius: 7px;
+    text-decoration: none
+}
+
+#navbar ul li a:hover{
+    color: white;
+    background-color: #62757f;
+}
+
+.header {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    background-color:rgb(75 75 74);
+    color: white;
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    padding: 10px;
+    text-align: center;
+}
+
+/* rgb(75 75 74) */
+
+#header_section{
+    height: 318px;
+}
+
+#header_section::before{ 
+    content: "";
+    position: absolute;
+    background: url(./images/bank3.jpg) no-repeat center center/cover;
+    height: 400px;
+    top:0px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    opacity:0.89;
+}
+
+/* left: 152px;
+width: 909px; */
+
+.home{
+    min-height: 475px;
+    text-align: center;
+    background-color: #f0ece5;
+}
+
+.footer {
+    margin-top: 2px;
+    bottom: 0;
+    left:0;
+    background-color: #52504b;
+    color: white;
+    text-align: center;
+    height: 75px;
+    width: 100%;
+    bottom:0px !important;
+   
+}
+
+.footerContent {
+
+    letter-spacing: 3px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.viewAll {
+    text-align: center;
+    margin-top: 20px;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.view {
+    text-align: center;
+    align-items: center;
+}
+
+#viewTable {
+    width:100%;
+}
+.mytable {
+    width:100%;
+}
+
+#t01 tr:nth-child(even) {
+background-color: white;
+  }
+#t01 tr:nth-child(odd) {
+   background-color:rgb(232, 232, 240);
+  }
+
+th {
+    font-weight: bolder;
+    background-color: rgb(199 193 185);
+    color: #0b0101;
+    
+}
+
+.MuiButton-containedPrimary {
+    color: #0b0101 !important;
+    background-color: rgb(199 193 185) !important;
+}
+
+.MuiButton-outlinedPrimary {
+    color: #5b5752 !important;
+    border: 1px solid rgb(20 20 21 / 50%) !important;
+}
+
+.MuiButton-outlinedPrimary:hover {
+    border: 1px solid rgb(20 20 21 / 50%) !important;
+    background-color: rgba(63, 81, 181, 0.04) !important;
+}
+
+.MuiAlert-standardSuccess {
+    color: rgb(28 71 29) !important;
+    background-color: rgb(222 240 222) !important;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+th, td {
+    padding: 15px;
+  }
+
+.transfer {
+    margin:5px;
+}
+
+
+#btn {
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+#t1 {
+    margin-top: 20px;
+}
+
+.info {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width:425px){
+    th,td {
+        padding: 5px;
+    }
+}
+
+@media only screen and (max-width:375px){
+    th, td {
+        padding: 3px;
+      }
+      .alert {
+        font-size: smaller;
+    }
+}
+
+@media only screen and (max-width:320px){
+    th, td {
+        padding: 2px;
+        font-size: smaller;
+      }
+    .alert {
+        font-size: smaller;
+    }
+}
