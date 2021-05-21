@@ -44,7 +44,7 @@ const Home = () => {
         <>
             <section id="home_section">
                 <div className="home">
-                    <h3>To Transfer Amount View the Customer</h3>
+                    <h3 className="home-h">To Transfer Amount View the Customer</h3>
                     <Button variant="outlined" color="primary" onClick={showCustomer}>View Customers</Button><br></br><br></br>
                     <Button variant="outlined" color="primary" onClick={showTransfer}>Transfer History</Button>
                     {cstate === true ? <ViewAll props={data} /> : tstate === true ? <ViewTransfer props={transfer} /> : <Info />}
